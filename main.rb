@@ -15,17 +15,6 @@ def patient_contact_info
     end
 end
 
-# def patient_currently_admitted?
-#     begin
-#         raise ArgumentError, "Please input proper time" 
-
-#         rescue ArgumentError => e
-#         puts "Exception message: #{e.message}"
-#         else
-#         puts "Patient currently in hospital, admitted at #{admit_time}"
-#     end
-# end
-
 puts patient_contact_info
 
 #Error 2: `patient_status': Argument is not a string (ArgumentError)
