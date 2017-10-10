@@ -19,15 +19,7 @@ class Patient
   end
 
   def patient_currently_admitted?(admit_time)
-
-    begin
-        raise ArgumentError, "Please input proper time" unless patient_currently_admitted?
-
-        rescue ArgumentError => e
-        puts "Exception message: #{e.message}"
-        else
         puts "Patient currently in hospital, admitted at #{admit_time}"
-    end
   end
 
   def patient_new_total(amount)

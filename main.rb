@@ -21,7 +21,12 @@ puts patient_contact_info
 puts new_patient.patient_status(:coma)
 
 #Error 3: `patient_currently_admitted?': wrong number of arguments (given 0, expected 1) (ArgumentError)
-# puts new_patient.patient_currently_admitted?
+begin
+    puts new_patient.patient_currently_admitted?
+
+    rescue ArgumentError
+    puts "Exception message: Please input proper time"
+end
 
 #Error 4:  divided by 0 (ZeroDivisionError)
 print new_patient.patient_new_total(125)
