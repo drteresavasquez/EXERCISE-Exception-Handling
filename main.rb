@@ -29,5 +29,5 @@ print new_patient.patient_new_total(125)
 #Error 5: `add_med_to_list': 123.12 is not a integer (ArgumentError)
 new_patient.add_med_to_list("lipitor", 123.12)
 
-#Error 5: `patient_medications_list': Medications list is not valid. (RuntimeError)
+#Error 6: `patient_medications_list': Medications list is not valid. (RuntimeError)
 new_patient.patient_medications_list
