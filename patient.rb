@@ -8,7 +8,6 @@ class Patient
   end
 
   def patient_status(status)
-
     begin
         raise ArgumentError,"Argument is not a string" unless status.is_a? String
 
@@ -25,10 +24,8 @@ class Patient
   def patient_new_total(amount)
     @current_balance = 0
     puts "Current balance before calculation: #{current_balance}"
-
     begin
         raise ZeroDivisionError, "Not divisible by Zero (0). Check current Balance." unless @current_balance != 0
-
     rescue ZeroDivisionError => e 
         puts "Exception message: #{e.message}"
     else
@@ -41,7 +38,6 @@ class Patient
   def add_med_to_list(med, dosage)
     begin
         raise ArgumentError,"#{dosage} is not an integer" unless dosage.is_a? Integer
-
     rescue ArgumentError => e
         puts "Exception message: #{e.message}"
     else
@@ -63,7 +59,6 @@ class Patient
   def patient_medications_list
     begin
     raise RuntimeError, "Medications list is not valid."
-
     rescue RuntimeError => e 
         puts "Exception message: #{e.message}"
     else
@@ -73,8 +68,8 @@ class Patient
      # This needs to run whether there was an exception or not.
      puts "Disclaimer: The hospital is not responsible for the user's health due to medications they may be using."
     end
-   
   end
+  
 end
 
 class MedTypeError < StandardError
